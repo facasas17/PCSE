@@ -39,10 +39,10 @@ extern "C" {
 /*==================[ Declaraciones de funciones externas ]====================*/
 
 void disk_timerproc(void);
-void search_file( char *extension, char *fname );
+void SD_search_file( char *extension, char *fname );
 void SD_init( void );
-void load_html( char *file_name );
-void wifi_config(char * wifiName, char * wifiPass, char *wifi_file);
+void SD_load_html( char *file_name );
+void SD_wifi_config(char * wifiName, char * wifiPass, char *wifi_file);
 
 /*==================[cplusplus]==============================================*/
 
