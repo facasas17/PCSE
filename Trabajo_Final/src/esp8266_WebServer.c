@@ -4,6 +4,10 @@
  * License: Free
  * Date: 2020/10/09
  * Version: v1.1
+ *
+ * Copyright 2016, Marcelo Vieytes.
+ * Copyright 2017, Pablo Gomez - Agustin Bassi.
+ * All rights reserved.
  *===========================================================================*/
 
 
