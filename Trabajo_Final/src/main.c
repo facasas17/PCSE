@@ -31,18 +31,18 @@ int main( void ){
    printf("Inicializando\n");
    printf("\r\n");
 
-   // Funcion para inciar la comunicación SPI y
+   // Funcion para inciar la comunicaciÃ³n SPI y
    // configurar el driver de la tarjeta SD
    SD_init();
 
    // Lectura de configuracion de Wifi desde la SD
-   wifi_config(wifiName, wifiPass, ARCHIVO_CONFIG_WIFI);
+   SD_wifi_config(wifiName, wifiPass, ARCHIVO_CONFIG_WIFI);
 
    // Busqueda de archivo con extension .html
-   search_file( FILE_EXTENSION, file_name );
+   SD_search_file( FILE_EXTENSION, file_name );
 
    // Lectura de archivo html encontrado
-   load_html( file_name );
+   SD_load_html( file_name );
 
    // Inicializacion del servidor Web
    WebServer_init(wifiName, wifiPass);
