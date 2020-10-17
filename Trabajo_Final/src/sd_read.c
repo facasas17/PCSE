@@ -54,7 +54,7 @@ void SD_init( void )
 	}
 }
 
-void search_file( char *extension, char *fname )
+void SD_search_file( char *extension, char *fname )
 {
 	DIR dir;         /* Directory object */
 	FILINFO fno;
@@ -71,7 +71,7 @@ void search_file( char *extension, char *fname )
 	}
 }
 
-void load_html( char *file_name )
+void SD_load_html( char *file_name )
 {
 	UINT size_read = 0;
 
@@ -88,7 +88,7 @@ void load_html( char *file_name )
 		/* Leo el archivo desde lo ultimo que leyo. */
 		f_read( &fp, HttpWebPageBody, sizeof(HttpWebPageBody), &size_read );
 
-		/* Me muevo hasta el ultimo byte leido que corresponde al tamaño de HttpWebPageBody */
+		/* Me muevo hasta el ultimo byte leido que corresponde al tamaÃ±o de HttpWebPageBody */
 		f_lseek( &fp, sizeof(HttpWebPageBody));
 
 		f_gets(HttpWebPageEnd, sizeof(HttpWebPageEnd), &fp);
@@ -104,7 +104,7 @@ void load_html( char *file_name )
 	 }
 }
 
-void wifi_config(char * wifiName, char * wifiPass, char *wifi_file)
+void SD_wifi_config(char * wifiName, char * wifiPass, char *wifi_file)
 {
 	char aux_name[50];
 	char aux_pass[50];
