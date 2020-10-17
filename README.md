@@ -11,7 +11,7 @@ Permite buscar archivos que tengan el nombre o la extensión indicados en *exten
 Para este programa se configura la extension en el main.c con __#define FILE_EXTENSION		"*.html"__
 
 * __void wifi_config(char * wifiName, char * wifiPass, char *wifi_file)__ : 
-Lee el archivo con el nombre indicado en el main.c con **#define ARCHIVO_CONFIG_WIFI** y levanta los datos de la red Wifi donde se va a conectar (SSDI y contraseña).
+Lee el archivo con el nombre indicado en el main.c con **#define ARCHIVO_CONFIG_WIFI** y levanta los datos de la red Wifi donde se va a conectar (SSID y contraseña).
 
 
 ### Archivo configuración Wifi "wifi_config.txt"
